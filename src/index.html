@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- js에서 css require시키고, webpack.config에서 css-loader와 style-loader를 사용했기 때문에,
+  따로 css 파일을 첨부하지 않아도 자동으로 css가 연결된다.-->
+  <title>Shout Lorem Ipsum Once</title>
+</head>
+<body>
+  <main>
+    <h1>Shout Lorem Ipsum Once</h1>
+    <div id="app"></div>
+  </main>
+  <!-- 번들링하지 않은 파일 연결시 require 문법 오류 난다. -->
+  <!-- <script src="index.js"></script> -->
+  <!-- <script src="app.bundle.js"></script> -->
+  <!-- html까지 번들링에 포함 시키면 더이상 js를 연결할 필요가 없다. (자동으로 head에 defer로 들어감)
+  webpack.config.js에서 plugins로 연결하고 있기 때문에 -->
+</body>
+</html>
